@@ -1,3 +1,5 @@
+<a href=""><img src="https://raw.githubusercontent.com/gestordamanutencao/gestordamanutencao/main/img/profileLQ.jpg" align="right"
+     alt="rodrigoaraujo" width="200" height="200"></a>
 <h1 align="left">
  
   <br>
