@@ -76,12 +76,7 @@ h2, h2 a {
 	max-width: 40%;
 	overflow: hidden;
 }
-	@media screen and (max-width: 600px) {
-		h2, h2 a {
-			max-width: 90%;
-			font-size: 30px;
-		}
-	}
+
 h3 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
