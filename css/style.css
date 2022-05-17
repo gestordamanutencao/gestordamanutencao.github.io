@@ -38,7 +38,7 @@ html, body {
 }
 /* ----- intro ----- */
 .header {
-	margin-top: 8vh;
+	margin-top: 6vh;
 }
 	@media screen and (max-width: 600px) {
 		.header {
@@ -117,14 +117,14 @@ h3 {
 	background-repeat: no-repeat;
 	background-size: contain;
 /* 	height: 40vw; */
-	height: 69vh;
-	margin: -70vh 0 0 -40vh;
+	height: 70vh;
+	margin: -20vh 0 0 -90vh;
 /* 	margin: -60% 0 0 -60%; */
 }
 	@media screen and (max-width: 600px) {
 		.photo {
 			height: 90vw;
-			margin: 10vh 0;
+			margin: 30vh 0;
 		}
 	}
 
