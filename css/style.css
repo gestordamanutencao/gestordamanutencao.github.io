@@ -42,7 +42,7 @@ html, body {
 }
 	@media screen and (max-width: 600px) {
 		.header {
-			margin-top: 18vh;
+			margin-top: 5h;
 		}
 	}
 h1 {
