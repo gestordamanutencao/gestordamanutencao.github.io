@@ -47,9 +47,9 @@ html, body {
 	}
 h1 {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 600;
-	font-size: 252px;
-    font-size: 17.5vw;
+	font-weight: 450;
+	font-size: 189px;
+    font-size: 13.125vw;
 	line-height: 80%;
 	color: #FFFFFF;
 	text-transform: uppercase;
