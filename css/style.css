@@ -38,11 +38,11 @@ html, body {
 }
 /* ----- intro ----- */
 .header {
-	margin-top: 6vh;
+	margin-top: 8vh;
 }
 	@media screen and (max-width: 600px) {
 		.header {
-			margin-top: 5h;
+			margin-top: 18h;
 		}
 	}
 h1 {
