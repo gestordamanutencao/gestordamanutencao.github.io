@@ -113,6 +113,17 @@ h3 {
 /* ----- content ----- */
 
 
+.photo {
+	background-image: url(../img/me.png);
+	align-content: right;
+	background-size: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: contain;
+/* 	height: 0vw; */
+	height: 0vh;
+	margin: 0vh 0 0 0vh;
+/* 	margin: 0% 0 0 -0%; */
+}
 	@media screen and (max-width: 600px) {
 		.photo {
 			height: 90vw;
