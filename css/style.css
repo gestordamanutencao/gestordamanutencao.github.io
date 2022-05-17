@@ -40,7 +40,7 @@ html, body {
 .header {
 	margin-top: 5vh;
 }
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 600px) {
 		.header {
 			margin-top: 20vh;
 		}
@@ -54,7 +54,8 @@ h1 {
 	color: #FFFFFF;
 	text-transform: uppercase;
 }
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 
+	px) {
 		h1 {
     		font-size: 28vw;
 	    }
@@ -75,7 +76,7 @@ h2, h2 a {
 	max-width: 40%;
 	overflow: hidden;
 }
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 600px) {
 		h2, h2 a {
 			max-width: 100%;
 			font-size: 30px;
@@ -120,7 +121,7 @@ h3 {
 	margin: -50vh 0 0 -60vh;
 /* 	margin: -60% 0 0 -60%; */
 }
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 600px) {
 		.photo {
 			height: 90vw;
 			margin: 10vh 0;
@@ -182,7 +183,7 @@ h3 {
 	margin-left: 1vh;
 }
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 600px) {
 		.content,.projectleft,.project {
 			max-width: 100%;
 			margin-top: 0;
@@ -236,7 +237,7 @@ p a, p a:after, p a:visited {
 	line-height: 133%;
 }
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 600px) {
 		.contact {
 			font-size: 10vw;
 		}
