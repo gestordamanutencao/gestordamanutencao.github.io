@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["SingleLineSpan","A range within a single line of a string."]]});
