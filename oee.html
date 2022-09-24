@@ -1,0 +1,466 @@
+<!DOCTYPE html> 
+<html lang=pt-br>
+    <head>
+        <meta charset=utf-8>
+        <meta name=viewport content=device-width, initial-scale=1.0>
+        <meta name=viewport content="width=devidce-width">
+        <title>OEE-Overall Equipment Effectiveness - Ferramentas</title>
+        <script type='text/javascript'>window.mod_pagespeed_start = Number(new Date());</script><link rel=preconnect href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel=stylesheet>
+        <link href=A.style-oee.css.pagespeed.cf.T67xCtOKrz.css rel=stylesheet>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    </head>
+    <body>
+
+
+        <nav class=topnav>
+    
+            <a href=ferramentas.html><script data-pagespeed-no-defer>(function(){var g=this;function h(b,d){var a=b.split("."),c=g;a[0]in c||!c.execScript||c.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===d?c[e]?c=c[e]:c=c[e]={}:c[e]=d};function l(b){var d=b.length;if(0<d){for(var a=Array(d),c=0;c<d;c++)a[c]=b[c];return a}return[]};function m(b){var d=window;if(d.addEventListener)d.addEventListener("load",b,!1);else if(d.attachEvent)d.attachEvent("onload",b);else{var a=d.onload;d.onload=function(){b.call(this);a&&a.call(this)}}};var n;function p(b,d,a,c,e){this.h=b;this.j=d;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=c;this.b={};this.a=[];this.c={}}function q(b,d){var a,c,e=d.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=d.offsetWidth&&0>=d.offsetHeight)a=!1;else{c=d.getBoundingClientRect();var f=document.body;a=c.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);c=c.right+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollright);f=a.toString()+","+c;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&c<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}p.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&q(this,b)};h("pagespeed.CriticalImages.checkImageForCriticality",function(b){n.checkImageForCriticality(b)});h("pagespeed.CriticalImages.checkCriticalImages",function(){r(n)});function r(b){b.b={};for(var d=["IMG","INPUT"],a=[],c=0;c<d.length;++c)a=a.concat(l(document.getElementsByTagName(d[c])));if(0!=a.length&&a[0].getBoundingClientRect){for(c=0;d=a[c];++c)q(b,d);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(d=0!=b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),c=1;c<b.a.length;++c){var e=","+encodeURIComponent(b.a[c]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(t())),131072>=a.length+e.length&&(a+=e),d=!0);u=a;if(d){c=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(k){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(v){}}f&&(f.open("POST",c+(-1==c.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function t(){var b={},d=document.getElementsByTagName("IMG");if(0==d.length)return{};var a=d[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var c=0;a=d[c];++c){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var u="";h("pagespeed.CriticalImages.getBeaconData",function(){return u});h("pagespeed.CriticalImages.Run",function(b,d,a,c,e,f){var k=new p(b,d,a,e,f);n=k;c&&m(function(){window.setTimeout(function(){r(k)},0)})});})();pagespeed.CriticalImages.Run('/ngx_pagespeed_beacon','http://www.rodrigoaraujo.eng.br/ferramentas.html','xIDQzpNkHn',true,false,'9nT1Oq8S8q0');</script></a>
+            <a class=btn_logout href="https://www.rodrigoaraujo.eng.br/ferramentas"> <i class="fas fa-sign-out-alt"></i></a>
+        
+    
+        </nav>  
+        
+    
+    
+        <button class=btn_print onclick="print()"> Salvar PDF <i class="fas fa-file-pdf"></i> </button>
+
+    <h1> Relatório de OEE - Overall Equipment Effectiveness </h1>
+
+    <div class=head_info>
+        <label for=asset_name>Ativo: </label><input class=asset_info id=asset_name required>
+        <label for=asset_tag>TAG: </label><input class=asset_info id=asset_tag required>
+        
+        <label for=initial_date>Período de Análise: </label>
+        
+        <div class=time_course> 
+            <input class=asset_info type=date id=initial_date required>
+            <input class=asset_info type=date id=final_date required>
+        
+        </div>
+
+        <button class=btn onclick="show()">Iniciar </button>
+
+    </div>
+
+    <div class=main_container>
+        <div class=input_area>
+            
+            <div class=data_field>
+                <div class=label_set> 
+                    <label class=input_label for=work_hours><span class=input_label>Horas trabalhadas por dia:⠀ </span> 
+                    <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Insira aqui a quantidade de horas que o ativo deve operar por dia.</span></div>
+                </label> 
+                <output class=output_range name=amount id=working_hours>8h</output> </div>
+                <input class=input_field type=range step=0.25 min=1 max=24 value=8 id=work_hours oninput="working_hours.value=work_hours.value" required>
+                <div class=bottom_label> <span>1h</span> <span>24h</span> </div>
+                
+            </div>
+
+            <div class=data_field>
+                <div class=label_set><label class=input_label for=work_days><span class=input_label>Dias trabalhados por mês:⠀</span>
+                <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Insira aqui a quantidade de dias que o ativo deve operar por mês.  </span></div>
+                </label> 
+                <output class=output_range name=amount id=working_days>22</output> </div>
+            <input class=input_field type=range step=1 min=1 max=31 value=22 id=work_days oninput="working_days.value=work_days.value" required>
+            <div class=bottom_label> <span>1</span> <span>31</span> </div>
+            </div>
+
+            <div class=data_field>
+            <label class=input_label for=preventive_time>Tempo para Manutenção Preventiva:⠀ 
+                <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Insira aqui a quantidade de horas que o ativo fica sem operar, dentro do mês, por estar em manutenção preventiva.</span></div>
+            </label>
+            <input class=input_field type=number id=preventive_time required>
+            </div>
+
+            <div class=data_field>
+            <label class=input_label for=food_time>Tempo para Refeição/dia:⠀ 
+                <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Insira aqui a quantidade de horas que o ativo fica sem operar, diariamente, por estar em parado por ser horário de refeição dos operadores.</span></div>
+            </label>
+            <input class=input_field type=number id=food_time required>
+            </div>
+
+            <div class=data_field>
+            <label class=input_label for=non_schedule_time>Tempo sem Programação de Produção:⠀  
+                <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Insira aqui a quantidade de horas que o ativo fica sem operar, dentro do mês, por não ter programação para produção.</span></div>
+
+            </label>
+            <input class=input_field type=number id=non_schedule_time required>
+            </div>
+
+            <div class=label_set>
+            <h4>Paradas de Produção:⠀  </h4>
+            <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Insira quanto tempo que o ativo ficou parado por uma manutenção corretiva ou set-up.</span></div>
+            </div>
+            <div class=downtime_group id=downtime_group>
+                    <div class=form-group>
+                        
+                        
+                        <label class=label_downtime_list>1</label> <input class=downtime_event type=number name="titulo[]" placeholder=Horas> 
+                        <input class=downtime_event_minutes max=60 type=number name="titulo[]" placeholder=Minutos>
+
+                            <input list=downtime_classes class=input_list name=downtime_classes id=downtime_class placeholder="Tipo de Parada">
+                                <datalist id=downtime_classes>
+                                    <option class=failure value="Manutenção Corretiva">
+                                    <option class=setup value="Parada Para Set-Up">
+                                 </datalist>
+
+                        
+                        <button type=button class=btn_plus id=add-campo> + </button>
+                    </div>
+               
+            </div>
+            
+            <div class=data_field>
+            <label class=input_label for=preventive_time>Quantidade produzida/Período:⠀  
+                <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Insira o volume total de produção obtido durante o período em que o ativo esteve operando.</span></div>
+            </label>
+            <div class=form-group>
+            <input class=input_field type=number id=produced_qtd placeholder="Quantidade Total" required>
+            
+            <input list=units class=input_list name=units id=unit_production placeholder="Unid. de Medida" oninput="unit_standart.value=unit_production.value">
+            <datalist id=units>
+                <option value="Peças">
+                <option value=Litros>
+                <option value=Metros>
+                <option value=Kg></option>
+             </datalist>
+
+            </div>
+            </div>
+
+            <div class=data_field>
+                <label class=input_label for=standard_time>Velocidade máxima teórica:⠀  
+                    <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Insira aqui a velocidade de produção máxima que o ativo consegue trabalhar enquanto estiver operando em condições normais.</span></div>
+                </label> 
+                <div class=form-group>
+                    <input class=input_field type=number id=standard_time placeholder="Tempo Padrão" required>
+
+                    <output class=output_unit name=amount id=unit_standart></output>
+
+                    <input list=unit_times class=input_list name=unit_times id=unittimes placeholder=Ciclo min=0 required>
+                    <datalist id=unit_times>
+                        <option> Por hora </option>
+                        <option> Por minuto </option>
+                        <option> Por segundo </option>
+                    </datalist>
+
+                </div>
+            </div>
+
+            <div class=data_field>
+            <label class=input_label for=scrap>Peças não-conforme:⠀  
+                <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Insira aqui o volume de produção que teve problemas de qualidade e não foi contabilizado no volume de produção final.</span></div>
+            </label> 
+            <input class=input_field type=number id=scrap placeholder="Peças com Defeito" required>
+            </div>
+
+                  
+                 
+           
+    
+
+            
+            <button class=btn_calc onclick="calcular()"> Calcular </button>
+
+        </div>
+
+
+
+        <div class=chart_1>
+            <div class=oee id=oee></div>
+            
+            
+            <div class=oee_chart>
+                
+                <div class=gauge>
+                    <div class=gauge__body>
+                   
+                      <div class=gauge__fill></div>
+                                         
+                      <div class=gauge__cover></div>
+                    
+                      
+                    </div>
+                  </div>
+                
+                    <div class=oee_status id=oee_status></div>
+                                    
+            </div>
+        </div>
+
+        
+        <div class=chart_2>
+            <div class=progress_1>
+                <div class=availability_progress>
+                    <div class=availability_progress-done>                    
+                    </div>
+                </div>
+            <div class=availability_label> Disponibilidade </div> 
+            <div class=availability_label id=availability_data></div>    
+            </div>
+            <div class=progress_2>
+                <div class=performance_progress>
+                    <div class=performance_progress-done>                    
+                    </div>
+                </div>
+            <div class=performance_label> Produtividade </div> 
+            <div class=performance_label id=performance_data></div>
+            </div>
+            
+            <div class=progress_3>
+                <div class=quality_progress>
+                    <div class=quality_progress-done data-done=40>                    
+                    </div>
+                </div>
+            <div class=quality_label> Qualidade</div> 
+            <div class=quality_label id=quality_data></div>
+            </div>
+
+
+        </div>
+   
+    </div>
+
+
+
+    
+
+    <div class=second_container>
+
+        <div class=six_losses>
+
+            <h2> Perdas de Eficiência </h2>
+
+            <div class=progress_loss>
+                <div class=label_justify>
+                <div class=label_loss>
+                    <div class=availability_label_loss> Disponibilidade = </div> 
+                    <div class=availability_label_loss id=availability_data_loss></div> 
+                </div>
+
+                <div class=label_losses><p> Indisponibilidade = </p> <p id=unavailability></p></div>
+                </div>
+                <div class=availability_progress_loss> <div class=mark_a></div>
+                    <div class=availability_progress_loss-done>                    
+                    </div>
+                </div>
+                  
+            </div>
+
+            <div class=progress_loss>
+                <div class=label_justify>
+                <div class=label_loss>
+                    <div class=performance_label_loss> Produtividade = </div> 
+                    <div class=performance_label_loss id=performance_data_loss></div>
+                </div>
+                <div class=label_losses><p> Improdutividade = </p> <p id=unperformance></p></div>
+                </div>
+
+                <div class=performance_progress_loss> <div class=mark_p></div>
+                    <div class=performance_progress_loss-done>                    
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class=progress_loss>
+                <div class=label_justify>
+                <div class=label_loss>
+                    <div class=quality_label_loss> Qualidade = </div> 
+                    <div class=quality_label_loss id=quality_data_loss></div>
+                </div>
+                <div class=label_losses><p> Perdas por Qualidade = </p> <p id=quality_losses></p></div>
+                </div>
+
+                <div class=quality_progress_loss> <div class=mark_q></div>
+                    <div class=quality_progress_loss-done>                    
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class=progress_loss>
+            <div class=label_justify>
+             <div class=label_loss>
+                <div class=oee_label_loss> OEE = </div> 
+                <div class=oee_label_loss2 id=oee_data_loss></div>
+            </div>
+            <div class=label_losses><p> Ineficiência Global = </p> <p id=inefficiency></p></div>
+            </div>
+                <div class=oee_progress_loss>
+                    <div class=oee_progress_loss-done>                    
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+        <h2> Memorial de Cálculo </h2>
+
+        <table class=tabela id=tabela>
+            <thead>
+            <tr> 
+                <th> Informação </th>
+                <th> Dado </th>
+                <th> Unidade de Medida</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td> <div id=a1></div> Tempo Total Disponível para Operação </td>
+                <td> <div id=b1></div> </td>
+                <td> <div id=c1></div> Horas </td>
+            </tr>
+            
+            <tr>    
+                <td> <div id=a2></div> Tempo Ocioso (Tempo sem programação de produção)</td>
+                <td> <div id=b2></div>  </td>
+                <td> <div id=c2></div> Horas</td>
+            
+            </tr>
+
+            <tr>    
+                <td> <div id=a3></div><b> Paradas Programadas</b> </td>
+                <td> <div id=b3></div> </td>
+                <td> <div id=c3></div> </td>
+            
+            </tr>
+
+            <tr>    
+                <td> <div id=a4></div> Manutenção Preventiva </td>
+                <td> <div id=b4></div> </td>
+                <td> <div id=c4></div> Horas</td>
+            
+            </tr>
+
+            <tr>    
+                <td> <div id=a5></div> Horário de Refeição </td>
+                <td> <div id=b5></div> </td>
+                <td> <div id=c5></div> Horas/Período </td>
+            
+            </tr>
+
+            <tr>    
+                <td> <div id=a6></div> Set-Up de Produção</td>
+                <td> <div id=b6></div> </td>
+                <td> <div id=c6></div> Eventos</td>
+            
+            </tr>
+
+            <tr>    
+                <td> <div id=a8></div> <b> Paradas não-programadas</b></td>
+                <td> <div id=b8></div> </td>
+                <td> <div id=c8></div> </td>
+            
+            </tr>
+
+            <tr>    
+                <td> <div id=a9></div> Manutenção Corretiva</td>
+                <td> <div id=b9></div> </td>
+                <td> <div id=c9></div> Eventos</td>
+            
+            </tr>
+
+            <tr>    
+                <td> <div id=a10></div> Tempo Total em Operação</td>
+                <td> <div id=b10></div> </td>
+                <td> <div id=c10></div> Horas</td>
+            
+            </tr>
+            
+            <tr>    
+                <td> <div id=a11></div> Volume Total de Produção</td>
+                <td> <div id=b11></div> </td>
+                <td> <div id=c11></div> </td>
+            
+            </tr>
+
+            <tr>    
+                <td> <div id=a12></div> Produtos em conformidade</td>
+                <td> <div id=b12></div> </td>
+                <td> <div id=c12></div> </td>
+            
+            </tr>
+
+            <tr>    
+                <td> <div id=a13></div> Produtos não-conformes</td>
+                <td> <div id=b13></div> </td>
+                <td> <div id=c13></div> </td>
+            
+            </tr>
+
+
+
+            </tbody>
+        
+        </table>
+
+        
+    <div class=memory_calc>
+    <span class=calc_formula> OEE = Disponibilidade <p class=x>x</p> Produtividade <p class=x>x</p> Qualidade </span>
+    <span class=calc_formula> OEE = <span id=a_data> </span> <p class=x>x</p> <span id=p_data> </span> <p class=x>x</p> <span id=q_data> </span> </span>
+    <span class=calc_formula> OEE = <span id=oee_data> </span> </span>
+
+    <span class=calc_formula> Onde: </span>
+    <span class=calc_formula> Disponibilidade = Tempo em Operação / [Tempo Total Disponível - Tempo Ocioso] </span>
+    <span class=calc_formula> Disponibilidade = <span id=uptime> </span>  / [<span id=total_time> </span> - <span id=idle_time> </span>] </span>
+    <span class=calc_formula> Disponibilidade = <span id=a_data2> </span> </span>
+
+    <span class=calc_formula> Produtividade = [(Quantidade Produzida + Peças Não Conforme) / Tempo em Operação] / Tempo de Ciclo </span>
+
+    <span class=calc_formula> Produtividade = [(<span id=produced_qtd2> </span> + <span id=scrap2> </span>) / <span id=uptime2> </span>] / <span id=speed_cycle> </span> </span>
+    <span class=calc_formula> Produtividade = <span id=p_data2> </span> </span>
+
+    <span class=calc_formula> Qualidade = (Quantidade Produzida - Peças Não Conforme) / Quantidade Produzida </span>
+    <span class=calc_formula> Qualidade = (<span id=produced_qtd3> </span> - <span id=scrap3> </span>) / <span id=produced_qtd4> </span> </span>
+    <span class=calc_formula> Qualidade = <span id=q_data2> </span> </span>
+
+
+
+
+    <script src=script-oee.js></script>
+    <script></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin=anonymous></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+        
+
+
+
+    </div>
+    
+
+
+    </div>
+
+    
+
+
+    <script src=script-oee.js></script>
+    <script></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin=anonymous></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+        
+
+
+</body>
+
+<footer class=footer id=footer>     
+
+    <p> Rodrigo Araujo <br> PCM | Líder Kaizen | Black Belt Lean Six Sigma </p>
+ 
+</footer>   
+
+
+
+
+
+
+<script data-pagespeed-no-defer>(function(){window.pagespeed=window.pagespeed||{};var f=window.pagespeed;function h(e,a,c,b){this.f=e;this.a=a;this.b=c;this.g=b}f.beaconUrl="";
+function k(e){var a=e.f,c=window.mod_pagespeed_start,b=Number(new Date)-c,a=a+(-1==a.indexOf("?")?"?":"&"),a=a+"ets="+("load"==e.a?"load:":"unload:"),a=a+b;if("beforeunload"!=e.a||!window.mod_pagespeed_loaded){a+="&r"+e.a+"=";if(window.performance){var b=window.performance.timing,d=b.navigationStart,g=b.requestStart,a=a+(b[e.a+"EventStart"]-d),a=a+("&nav="+(b.fetchStart-d)),a=a+("&dns="+(b.domainLookupEnd-b.domainLookupStart)),a=a+("&connect="+(b.connectEnd-b.connectStart)),a=a+("&req_start="+(g-
+d)),a=a+("&ttfb="+(b.responseStart-g)),a=a+("&dwld="+(b.responseEnd-b.responseStart)),a=a+("&dom_c="+(b.domContentLoadedEventStart-d));window.performance.navigation&&(a+="&nt="+window.performance.navigation.type);d=-1;b.msFirstPaint?d=b.msFirstPaint:window.chrome&&window.chrome.loadTimes&&(d=Math.floor(1E3*window.chrome.loadTimes().firstPaintTime));d=d-g;0<=d&&(a+="&fp="+d)}else a+=b;f.getResourceTimingData&&window.parent==window&&(a+=f.getResourceTimingData());a+=window.parent!=window?"&ifr=1":"&ifr=0";
+"load"==e.a&&(window.mod_pagespeed_loaded=!0,(b=window.mod_pagespeed_num_resources_prefetched)&&(a+="&nrp="+b),(b=window.mod_pagespeed_prefetch_start)&&(a+="&htmlAt="+(c-b)));f.panelLoader&&(c=f.panelLoader.getCsiTimingsString(),""!=c&&(a+="&b_csi="+c));f.criticalCss&&(c=f.criticalCss,a+="&ccis="+c.total_critical_inlined_size+"&cces="+c.total_original_external_size+"&ccos="+c.total_overhead_size+"&ccrl="+c.num_replaced_links+"&ccul="+c.num_unreplaced_links);a+="&dpr="+window.devicePixelRatio;""!=
+e.b&&(a+=e.b);document.referrer&&(a+="&ref="+encodeURIComponent(document.referrer));a+="&url="+encodeURIComponent(e.g);f.beaconUrl=a;(new Image).src=a}}f.c=function(e,a,c,b){var d=new h(e,a,c,b);window.addEventListener?window.addEventListener(a,function(){k(d)},!1):window.attachEvent("on"+a,function(){k(d)})};f.addInstrumentationInit=f.c;})();
+
+pagespeed.addInstrumentationInit('/ngx_pagespeed_beacon', 'load', '', 'http://www.rodrigoaraujo.eng.br/ferramentas/oee.html');</script></html>

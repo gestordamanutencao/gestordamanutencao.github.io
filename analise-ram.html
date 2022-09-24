@@ -1,0 +1,297 @@
+<!DOCTYPE html> 
+<html lang=pt-br>
+    <head>
+        <meta charset=utf-8>
+        <meta name=viewport content=device-width, initial-scale=1.0>
+        <meta name=viewport content="width=devidce-width">
+        <title>Análise RAM - Ferramentas</title>
+        <script type='text/javascript'>window.mod_pagespeed_start = Number(new Date());</script><link rel=preconnect href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel=stylesheet>
+    <link href=A.style.css.pagespeed.cf._JLM-4UDiF.css rel=stylesheet><link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"></head>
+    <body class=body>
+     <center><script data-pagespeed-no-defer>(function(){var g=this;function h(b,d){var a=b.split("."),c=g;a[0]in c||!c.execScript||c.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===d?c[e]?c=c[e]:c=c[e]={}:c[e]=d};function l(b){var d=b.length;if(0<d){for(var a=Array(d),c=0;c<d;c++)a[c]=b[c];return a}return[]};function m(b){var d=window;if(d.addEventListener)d.addEventListener("load",b,!1);else if(d.attachEvent)d.attachEvent("onload",b);else{var a=d.onload;d.onload=function(){b.call(this);a&&a.call(this)}}};var n;function p(b,d,a,c,e){this.h=b;this.j=d;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=c;this.b={};this.a=[];this.c={}}function q(b,d){var a,c,e=d.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=d.offsetWidth&&0>=d.offsetHeight)a=!1;else{c=d.getBoundingClientRect();var f=document.body;a=c.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);c=c.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+c;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&c<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}p.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&q(this,b)};h("pagespeed.CriticalImages.checkImageForCriticality",function(b){n.checkImageForCriticality(b)});h("pagespeed.CriticalImages.checkCriticalImages",function(){r(n)});function r(b){b.b={};for(var d=["IMG","INPUT"],a=[],c=0;c<d.length;++c)a=a.concat(l(document.getElementsByTagName(d[c])));if(0!=a.length&&a[0].getBoundingClientRect){for(c=0;d=a[c];++c)q(b,d);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(d=0!=b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),c=1;c<b.a.length;++c){var e=","+encodeURIComponent(b.a[c]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(t())),131072>=a.length+e.length&&(a+=e),d=!0);u=a;if(d){c=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(k){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(v){}}f&&(f.open("POST",c+(-1==c.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function t(){var b={},d=document.getElementsByTagName("IMG");if(0==d.length)return{};var a=d[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var c=0;a=d[c];++c){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var u="";h("pagespeed.CriticalImages.getBeaconData",function(){return u});h("pagespeed.CriticalImages.Run",function(b,d,a,c,e,f){var k=new p(b,d,a,e,f);n=k;c&&m(function(){window.setTimeout(function(){r(k)},0)})});})();pagespeed.CriticalImages.Run('/ngx_pagespeed_beacon','http://www.rodrigoaraujo.eng.br/ferramentas/analise-ram.html','xIDQzpNkHn',true,false,'LGlaUxFgHOQ');</script></center>
+     
+
+     <nav class=topnav>
+    
+        <a href=ferramentas.html><script data-pagespeed-no-defer>(function(){var g=this;function h(b,d){var a=b.split("."),c=g;a[0]in c||!c.execScript||c.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===d?c[e]?c=c[e]:c=c[e]={}:c[e]=d};function l(b){var d=b.length;if(0<d){for(var a=Array(d),c=0;c<d;c++)a[c]=b[c];return a}return[]};function m(b){var d=window;if(d.addEventListener)d.addEventListener("load",b,!1);else if(d.attachEvent)d.attachEvent("onload",b);else{var a=d.onload;d.onload=function(){b.call(this);a&&a.call(this)}}};var n;function p(b,d,a,c,e){this.h=b;this.j=d;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=c;this.b={};this.a=[];this.c={}}function q(b,d){var a,c,e=d.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=d.offsetWidth&&0>=d.offsetHeight)a=!1;else{c=d.getBoundingClientRect();var f=document.body;a=c.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);c=c.right+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollright);f=a.toString()+","+c;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&c<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}p.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&q(this,b)};h("pagespeed.CriticalImages.checkImageForCriticality",function(b){n.checkImageForCriticality(b)});h("pagespeed.CriticalImages.checkCriticalImages",function(){r(n)});function r(b){b.b={};for(var d=["IMG","INPUT"],a=[],c=0;c<d.length;++c)a=a.concat(l(document.getElementsByTagName(d[c])));if(0!=a.length&&a[0].getBoundingClientRect){for(c=0;d=a[c];++c)q(b,d);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(d=0!=b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),c=1;c<b.a.length;++c){var e=","+encodeURIComponent(b.a[c]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(t())),131072>=a.length+e.length&&(a+=e),d=!0);u=a;if(d){c=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(k){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(v){}}f&&(f.open("POST",c+(-1==c.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function t(){var b={},d=document.getElementsByTagName("IMG");if(0==d.length)return{};var a=d[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var c=0;a=d[c];++c){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var u="";h("pagespeed.CriticalImages.getBeaconData",function(){return u});h("pagespeed.CriticalImages.Run",function(b,d,a,c,e,f){var k=new p(b,d,a,e,f);n=k;c&&m(function(){window.setTimeout(function(){r(k)},0)})});})();pagespeed.CriticalImages.Run('/ngx_pagespeed_beacon','http://www.rodrigoaraujo.eng.br/ferramentas.html','xIDQzpNkHn',true,false,'9nT1Oq8S8q0');</script></a>
+        <a class=btn_logout href="https://www.rodrigoaraujo.eng.br/ferramentas"> <i class="fas fa-sign-out-alt"></i></a>
+    
+
+    </nav>  
+    
+
+
+    <button class=btn_print onclick="print()"> Salvar PDF <i class="fas fa-file-pdf"></i> </button>
+         
+            
+    <div class=container>
+        
+        <h1 class=h1>Análise RAM - Reliability, Availability and Maintenability</h1> 
+        
+        <h2 class=h2> Informações do Ativo:</h2>
+        <div class=asset-info>   
+            
+            <p></p> <input class=asset-name type=text id=nome_do_ativo name=nome_do_ativo placeholder="Nome do Ativo" required>
+
+            <p></p> <input class="asset-tag type=" text" id=tag name=tag placeholder=TAG required>
+
+        </div>
+        
+            <div class=inputs>
+                <div class=failure-datas>
+                <h2 class=h2>Dados de Falha</h2>
+                Tempo em bom funcionamento:  <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Nesse campo, devem ser inseridas todas as horas em que o ativo esteve em <b>bom</b> funcionamento. Essa informação serve para compor o cálculo de MTBF - <i>Mean Time Between Failures</i> (Tempo Médio Entre Falhas):<br> <img class=mtbf_formula id=mtbf_formula src="https://raw.githubusercontent.com/gestordamanutencao/gestordamanutencao.github.io/main/ferramentas/formulas/mtbf-1.png" data-pagespeed-url-hash=577085128 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></div> </p>  <input class=time-mtbf type=number min=1 id=Horas_em_Funcionamento name=Horas_em_Funcionamento placeholder="Em horas" required>
+                    
+                Número de Falhas Funcionais: <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Nesse campo, deve ser inserido o número total de <b>Falhas Funcionais</b> que o ativo apresentou. Essa informação serve para compor o cálculo de MTBF - <i>Mean Time Between Failures</i> (Tempo Médio Entre Falhas):<br> <img class=mtbf_formula id=mtbf_formula src="https://raw.githubusercontent.com/gestordamanutencao/gestordamanutencao.github.io/main/ferramentas/formulas/mtbf_2-1.png" data-pagespeed-url-hash=2126384871 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> <br> <b>Falhas Funcionais</b> são apenas os eventos que suspendem completamente a <b>Função Requerida</b> do ativo.</span></div> </p>  <input class=failures type=number min=1 id="Número_de_Falhas" name="Número_de_Falhas" placeholder="Número de Falhas" required>
+                
+                Somatório dos Tempos de Reparo:  <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Nesse campo, deve ser inserido o somatório de horas em que o ativo passou sendo <b>reparado</b>. Essa informação serve para compor o cálculo de MTTR- <i>Mean Time To Repair</i> (Tempo Médio Para Reparo):<br> <img class=mtbf_formula id=mttr_formula src="https://raw.githubusercontent.com/gestordamanutencao/gestordamanutencao.github.io/main/ferramentas/formulas/mttr.png" data-pagespeed-url-hash=2558644106 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span></div> </p>  <input class=time-mttr type=number min=1 id=tempo_reparos name=tempo_reparos placeholder="Em horas" required>
+                
+                </div>
+
+                <div class=times>
+                <h2 class=h2>Tempos para Projeção</h2>
+                Tempo Para Projeção da Confiabilidade: <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Nesse campo, deve ser inserido o  <b>tempo futuro (em horas)</b> para projeção da confiabildiade do ativo. <br><br> <b>Confiabilidade</b> é a probabilidade de um item continuar desempenhando a sua função requerida em um dado intervalo de tempo futuro. <br>Dada por: <br> <img class=confiabilidade_formula id=mtbf_formula src="https://raw.githubusercontent.com/gestordamanutencao/gestordamanutencao.github.io/main/ferramentas/formulas/confiabilidade.png" data-pagespeed-url-hash=3817921863 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> <br> </span></div> </p> <input type=number min=0 id=Tempo name=Tempo placeholder="Em horas" required> 
+
+                Tempo Para Projeção da Mantenabilidade: <div class=tooltips><i class="fas fa-question-circle" class=tooltips></i> <span> Nesse campo, deve ser inserido o  <b>tempo esperado (em horas)</b> para reparo do ativo. <br><br> A <b>Mantenabilidade</b> é a probabilidade de ser realizar um reparo completo em <b>uma janela estimada de tempo</b>. <br>Dada por: <br> <img class=confiabilidade_formula id=mantenabilidade_formula src="" data-pagespeed-url-hash=3563281753 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> <br> </span></div> </p> <input type=number min=0 id=tempo_mantenabilidade name=tempo_mantenabilidade placeholder="Em horas" required>           
+                </div>
+
+            </div>
+            <button class=button onclick="calcular()"> <b>Calcular</b> </button>
+    </div>   
+ 
+    
+    <div class=bloco_resultados>
+
+       <h2 class=resultados> Resultados: </h2>
+
+        <div class=elementos id=elementos>
+            
+            <div class=elementos_sup>
+                <div class=resultado_mtbf id=resultado_mtbf> </div>
+                <div class=resultado_mttr id=resultado_mttr> </div>
+                <div class=resultado_f id=resultado_f></div>
+            </div>
+
+            <div class=elementos_inf>
+                <div class=resultado_r id=resultado_r>  </div>
+                <div class=resultado_d id=resultado_d>  </div>
+                <div class=resultado_m id=resultado_m> </div>
+            </div>
+
+           
+            
+        </div>
+
+        <script src=script.js></script>
+
+        <script>document.addEventListener('keypress',function(e){if(e.which==13){calcular();}},false);</script>
+
+        <center><canvas class=grafico_r></canvas></center>
+        <center><canvas class=grafico_d></canvas></center>
+        <center><canvas class=grafico_m></canvas></center>
+        <center><canvas class=grafico_f></canvas></center>
+        <br>
+        
+                <table class=tabela id=tabela>
+                <thead>
+                <tr> 
+                    <th> Tempo em horas (t) </th>
+                    <th> Confiabilidade R(t) </th>
+                    <th> Probabilidade de Falhas F(t)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td> <div id=t1></div> </td>
+                    <td> <div id=r1></div> </td>
+                    <td> <div id=f1></div> </td>
+                </tr>
+                
+                <tr>    
+                    <td> <div id=t2></div> </td>
+                    <td> <div id=r2></div></td>
+                    <td> <div id=f2></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t3></div> </td>
+                    <td> <div id=r3></div></td>
+                    <td> <div id=f3></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t4></div> </td>
+                    <td> <div id=r4></div></td>
+                    <td> <div id=f4></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t5></div> </td>
+                    <td> <div id=r5></div></td>
+                    <td> <div id=f5></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t6></div> </td>
+                    <td> <div id=r6></div></td>
+                    <td> <div id=f6></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t7></div> </td>
+                    <td> <div id=r7></div></td>
+                    <td> <div id=f7></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t8></div> </td>
+                    <td> <div id=r8></div></td>
+                    <td> <div id=f8></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t9></div> </td>
+                    <td> <div id=r9></div></td>
+                    <td> <div id=f9></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t10></div> </td>
+                    <td> <div id=r10></div></td>
+                    <td> <div id=f10></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t11></div> </td>
+                    <td> <div id=r11></div></td>
+                    <td> <div id=f11></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t12></div> </td>
+                    <td> <div id=r12></div></td>
+                    <td> <div id=f12></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t13></div> </td>
+                    <td> <div id=r13></div></td>
+                    <td> <div id=f13></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t14></div> </td>
+                    <td> <div id=r14></div></td>
+                    <td> <div id=f14></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t15></div> </td>
+                    <td> <div id=r15></div></td>
+                    <td> <div id=f15></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t16></div> </td>
+                    <td> <div id=r16></div></td>
+                    <td> <div id=f16></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t17></div> </td>
+                    <td> <div id=r17></div></td>
+                    <td> <div id=f17></div></td>
+                
+                </tr>
+                
+                <tr>    
+                    <td> <div id=t18></div> </td>
+                    <td> <div id=r18></div></td>
+                    <td> <div id=f18></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t19></div> </td>
+                    <td> <div id=r19></div></td>
+                    <td> <div id=f19></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t20></div> </td>
+                    <td> <div id=r20></div></td>
+                    <td> <div id=f20></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t21></div> </td>
+                    <td> <div id=r21></div></td>
+                    <td> <div id=f21></div></td>
+                
+                </tr>
+
+                <tr>    
+                    <td> <div id=t22></div> </td>
+                    <td> <div id=r22></div></td>
+                    <td> <div id=f22></div></td>
+                
+                </tr>
+                </tbody>
+            
+            </table>
+
+        
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin=anonymous></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+        
+    </div>  
+
+       
+    <section class=footer>
+
+        <p> Rodrigo Araujo <br> PCM | Líder Kaizen | Black Belt Lean Six Sigma </p>
+    
+    </section>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.9/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<script data-pagespeed-no-defer>(function(){window.pagespeed=window.pagespeed||{};var f=window.pagespeed;function h(e,a,c,b){this.f=e;this.a=a;this.b=c;this.g=b}f.beaconUrl="";
+function k(e){var a=e.f,c=window.mod_pagespeed_start,b=Number(new Date)-c,a=a+(-1==a.indexOf("?")?"?":"&"),a=a+"ets="+("load"==e.a?"load:":"unload:"),a=a+b;if("beforeunload"!=e.a||!window.mod_pagespeed_loaded){a+="&r"+e.a+"=";if(window.performance){var b=window.performance.timing,d=b.navigationStart,g=b.requestStart,a=a+(b[e.a+"EventStart"]-d),a=a+("&nav="+(b.fetchStart-d)),a=a+("&dns="+(b.domainLookupEnd-b.domainLookupStart)),a=a+("&connect="+(b.connectEnd-b.connectStart)),a=a+("&req_start="+(g-
+d)),a=a+("&ttfb="+(b.responseStart-g)),a=a+("&dwld="+(b.responseEnd-b.responseStart)),a=a+("&dom_c="+(b.domContentLoadedEventStart-d));window.performance.navigation&&(a+="&nt="+window.performance.navigation.type);d=-1;b.msFirstPaint?d=b.msFirstPaint:window.chrome&&window.chrome.loadTimes&&(d=Math.floor(1E3*window.chrome.loadTimes().firstPaintTime));d=d-g;0<=d&&(a+="&fp="+d)}else a+=b;f.getResourceTimingData&&window.parent==window&&(a+=f.getResourceTimingData());a+=window.parent!=window?"&ifr=1":"&ifr=0";
+"load"==e.a&&(window.mod_pagespeed_loaded=!0,(b=window.mod_pagespeed_num_resources_prefetched)&&(a+="&nrp="+b),(b=window.mod_pagespeed_prefetch_start)&&(a+="&htmlAt="+(c-b)));f.panelLoader&&(c=f.panelLoader.getCsiTimingsString(),""!=c&&(a+="&b_csi="+c));f.criticalCss&&(c=f.criticalCss,a+="&ccis="+c.total_critical_inlined_size+"&cces="+c.total_original_external_size+"&ccos="+c.total_overhead_size+"&ccrl="+c.num_replaced_links+"&ccul="+c.num_unreplaced_links);a+="&dpr="+window.devicePixelRatio;""!=
+e.b&&(a+=e.b);document.referrer&&(a+="&ref="+encodeURIComponent(document.referrer));a+="&url="+encodeURIComponent(e.g);f.beaconUrl=a;(new Image).src=a}}f.c=function(e,a,c,b){var d=new h(e,a,c,b);window.addEventListener?window.addEventListener(a,function(){k(d)},!1):window.attachEvent("on"+a,function(){k(d)})};f.addInstrumentationInit=f.c;})();
+
+pagespeed.addInstrumentationInit('/ngx_pagespeed_beacon', 'load', '', 'http://www.rodrigoaraujo.eng.br/ferramentas/analise-ram.html');</script></body>
+
+
+
+
+</html>
