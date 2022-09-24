@@ -1,212 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width" />
-    <meta charSet="utf-8" />
-    <title class="jsx-75192e1c6fd4560f">Rodrigo Araujo</title>
-    <meta name="description" content="Especialista em Melhoria Contínua" class="jsx-75192e1c6fd4560f" />
-    <meta property="og:type" content="website" class="jsx-75192e1c6fd4560f" />
-    <meta property="og:locale" content="pt_BR" class="jsx-75192e1c6fd4560f" />
-    <meta property="og:title" content="Rodrigo Araujo" class="jsx-75192e1c6fd4560f" />
-    <meta property="og:description" content="Especialista em Melhoria Contínua" class="jsx-75192e1c6fd4560f" />
-    <meta property="og:image" content="/avatar-big.png" class="jsx-75192e1c6fd4560f" />
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/gestordamanutencao/gestordamanutencao/main/img/profile/profileLQ.jpg" sizes="250x250" class="jsx-75192e1c6fd4560f" />
-    <meta name="next-head-count" content="14" />
-    <noscript data-n-css=""></noscript>
-    <style id="__jsx-75192e1c6fd4560f">
-      * {
-        box-sizing: border-box
-      }
-
-      html,
-      body {
-        padding: 0;
-        margin: 0
-      }
-
-      .container {
-        min-height: 80vh;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        color: #2C2C2C;
-        text-align: center
-      }
-
-      a {
-        color: inherit;
-        -webkit-text-decoration: none;
-        text-decoration: none
-      }
-    </style>
-    <style id="__jsx-7d0c093f5e518fb2">
-      .avatar.jsx-7d0c093f5e518fb2 {
-        width: 300px;
-        height: 300px;
-        border-radius: 60%;
-        margin: 0.2rem 0
-      }
-
-      .button {
-	width: 100%;
-	height: 25px;
-	border-radius: 3px;
-	border: none;
-	background-image: linear-gradient(to right, rgb(00, 00, 00), rgb(00, 00, 00), rgb(00, 00, 00));
-	font-size: 15px;
-    font-weight: 500;
-	color: #fff;
-	font-family: system-ui, -apple-system,  Segoe UI,
-	cursor: pointer;
-	transition: .5s;
-    margin: 5px;
-    margin-bottom: 10px;
-    outline: 0;
-    text-align: center
-}
-
-      .title.jsx-7d0c093f5e518fb2 {
-        margin: 0;
-        line-height: 1.5;
-        font-size: 3rem;
-        text-align: center;
-        letter-spacing: -0.02em
-      }
-
-      .description.jsx-7d0c093f5e518fb2 {
-        text-align: center;
-        line-height: 0.1;
-        font-size: 1.3rem
-      }
-
-      .grid.jsx-7d0c093f5e518fb2 {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        flex-wrap: wrap;
-        max-width: 800px;
-        margin-top: 1.5rem
-      }
-
-      .card.jsx-7d0c093f5e518fb2 {
-        margin: 1rem;
-        -webkit-flex-basis: 45%;
-        -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        -webkit-text-decoration: none;
-        text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        -webkit-transition: color 0.15s ease, border-color 0.15s ease;
-        transition: color 0.15s ease, border-color 0.15s ease
-      }
-
-      .card.jsx-7d0c093f5e518fb2:hover,
-      .card.jsx-7d0c093f5e518fb2:focus,
-      .card.jsx-7d0c093f5e518fb2:active {
-        color: #1000000;
-        border-color: #000000
-      }
-
-      .card.jsx-7d0c093f5e518fb2 h3.jsx-7d0c093f5e518fb2 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem
-      }
-
-      .card.jsx-7d0c093f5e518fb2 p.jsx-7d0c093f5e518fb2 {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5
-      }
-
-      @media (max-width:700px) {
-        .avatar.jsx-7d0c093f5e518fb2 {
-          width: 120px;
-          height: 120px;
-          margin-bottom: 1rem
-        }
-
-        .title.jsx-7d0c093f5e518fb2 {
-          line-height: 1;
-          font-size: 1.8rem
-        }
-
-        .grid.jsx-7d0c093f5e518fb2 {
-          width: 100%;
-          -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-          flex-direction: row;
-          margin-top: 0rem
-        }
-
-        .card.jsx-7d0c093f5e518fb2 {
-          -webkit-flex-basis: 100%;
-          -ms-flex-preferred-size: 100%;
-          flex-basis: 100%
-        }
-
-        .card.jsx-7d0c093f5e518fb2 h3.jsx-7d0c093f5e518fb2 {
-          margin: 0 0 0.5rem 0;
-          font-size: 1.5rem
-        }
-      }
-    </style>
-  </head>
-  <center>
-  <body>
-    <br>
-    <div class="topNav">
-      <p align="right">
-
-        <a href="menu.html"><img src="https://img.shields.io/badge/Menu-black" alt="Menu">
-          &emsp;&emsp;&emsp;&emsp;
-          &emsp;&emsp;&emsp;&emsp;
-          &emsp;&emsp;&emsp;&emsp;
-          &emsp;&emsp;&emsp;&emsp;
-          &emsp;&emsp;&emsp;&emsp;
-          &emsp;&emsp;&emsp;&emsp;
-         
-       
-      </p>
-  </div>
-</center>
+<head>
+<meta charset="UTF-8">
+<title>Rodrigo Araujo - Especialista em Melhoria Contínua</title>
+<meta name="description" content="Mechanical Engineering">
+<link href="css/stylesindex.css" rel="stylesheet" type="text/css">
+<link href="css/animateindex.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
 
 
-    <div id="__next" data-reactroot="">
-      <div class="jsx-75192e1c6fd4560f container">
-        <img src="https://raw.githubusercontent.com/gestordamanutencao/gestordamanutencao/main/img/profile/profileLQ.jpg" title="Rodrigo Araujo" alt="Rodrigo Araujo" class="jsx-7d0c093f5e518fb2 avatar" />
-        <h1 class="jsx-7d0c093f5e518fb2 title"><font color="#1A2022">Rodrigo Araujo</font></h1>
-        <p class="jsx-7d0c093f5e518fb2 description"><b>Engenharia Mecânica</b></p>
-        <b>Especialista em Melhoria Contínua</b>
-
-        <p align="center">
-        <img src="https://shields.io/badge/Black%20Belt%20Lean%20Six%20Sigma-161615" alt="Black Belt Lean Six Sigma">&emsp;
-        <img src="https://shields.io/badge/ISO%209001-161615" alt="ISO 9001 Quality Management Systems Associate™">&emsp;
-        <img src="https://shields.io/badge/Lean%20Professional-161615" alt="Lean Foundations Professional Certification™ (LFPC™)">&emsp;
-        <img src="https://shields.io/badge/SCRUM%20Master-161615" alt="SCRUM Master">
-      </p>
-   </div>
-
-      </div>
+</head>
+<body>
+<div id="home" class="animated fadeInUp">
+	Kaizen <font color="red">&</font><br>
+    Lean <font color="red">&</font><br>
+	SCRUM <font color="red">&</font><br>
+    Six Sigma
+</div>
+<div id="work_wrapper">
+	
+    <div id="logo">
+    	<a href="about.html" class="scroll animated fadeIn delay-1s">about</a>&emsp;<a href="contact.html" class="scroll animated fadeIn delay-1s">contact</a>&emsp;<a href="menu.html" class="scroll animated fadeIn delay-1s">portfolio</a>&emsp;&emsp;<span class="fi fi-br"></span>
+		
     </div>
+	
+    <div class="work" id="menu">
+    	<div class="credit">
+    		<a href="https://raw.githubusercontent.com/gestordamanutencao/gestordamanutencao/main/docs/certificados/Black%20Belt%20Lean%20Seis%20Sigma.pdf" target="_blank">Black Belt Lean Six Sigma</a><br>
+			<a href="https://www.skillfront.com/Badges/45540432460373" target="_blank">ISO 9001 Quality Management</a><br>
+			<a href="https://www.skillfront.com/Badges/94587766769543" target="_blank">Lean Professional</a><br>
+			<a href="https://www.scrum.as/diplome/2crfv6sw4ina5a9igqtt.pdf" target="_blank">SCRUM Master</a><br>
+
+   		</div>
+
+	<div class="work" id="ewi">
+        <div class="credit"></div>
+        <a href="rodrigoaraujo.html"><h2>Rodrigo Araujo</h2> </a>
+      </div>
+
+	<script src="js/jquery.fittext.js"></script>
+<script type="text/javascript">
+	$("#home").fitText(0.81, { minFontSize: '20px', maxFontSize: '350px' });
+	$(".work h1").fitText(0.62, { minFontSize: '30px', maxFontSize: '500px' });
+	$(".work h2").fitText(.85, { minFontSize: '30px', maxFontSize: '500px' });
+	$("#contact h1").fitText(0.80, { minFontSize: '140px', maxFontSize: '350px' });
+	$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
+</script>
 </body>
 </html>
