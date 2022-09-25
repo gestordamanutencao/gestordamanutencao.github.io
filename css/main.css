@@ -489,7 +489,7 @@ html a.social-link:hover:before {
 
 /* LINK 1 */
 .link-1 {
-  position: relative; text-decoration: none; display: inline-block; color: inherit; padding: 0 1px; transition: color ease 0.3s;
+  position: relative; text-decoration: none;  color: inherit; padding: 0 1px; transition: color ease 0.3s;
 	}
 .link-1:after {
   content: ''; position: absolute; z-index: -1; width: 100%; height: 6%; min-height: 2px; left: 0; bottom: 0; background-color: #222; transition: all ease 0.3s;
@@ -517,7 +517,7 @@ html a.social-link:hover:before {
 	}
 /* red links */
 .link-1.red:after {
-	background: #ff322e;
+	background: #ff0400;
 	}
 /* yellow links */
 .link-1.yellow:after {
@@ -606,7 +606,7 @@ html a.social-link:hover:before {
 /* red links */
 .link-2.red:before,
 .link-2.red:after {
-	background: #ff322e;
+	background: #ff0400;
 	}
 /* yellow links */
 .link-2.yellow:before,
@@ -731,10 +731,10 @@ html a.social-link:hover:before {
 	}
 /* red buttons */
 .button.red {
-	border-color: #ff322e; color: #ff322e;
+	border-color: #ff0400; color: #ff0400;
 	}
 .button.red:after {
-	background: #ff322e;
+	background: #ff0400;
 	}
 /* yellow buttons */
 .button.yellow {
@@ -850,7 +850,7 @@ html a.social-link:hover:before {
 	}
 /* red highlights */
 .highlight.red {
-	background: #ff322e;
+	background: #ff0400;
 	}
 /* yellow highlights */
 .highlight.yellow {
@@ -913,7 +913,7 @@ html a.social-link:hover:before {
 	}
 /* red text */
 .text.red {
-	color: #ff322e;
+	color: #ff0400;
 	}
 /* yellow text */
 .text.yellow {
