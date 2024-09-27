@@ -44,20 +44,76 @@
             cursor: pointer;
             text-decoration: none;
         }
+
+        /* Estilizando o botão dropdown */
+       .dropdown {
+            position: absolute;
+            top: 10px;  /* Alinhando no canto superior */
+            right: 10px; /* Alinhando no canto direito */
+            display: inline-block;
+        }
+
+        .dropdown button {
+            background-color: #000; /* Botão preto */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block; /* Exibe as opções quando o mouse está sobre o botão */
+        }
+
+        .dropdown button:hover {
+            background-color: #333; /* Altera a cor ao passar o mouse */
+        }
+
     </style>
 </head>
 
-<body class="theme-invert invert-theme">
+<body class="theme-default default-theme">
     <script src="js/shorby.js"></script>
     <div class="container smartpage-container">
-        <div align="left" class="bio-title">
-            <div align="left" class="bio-description">
-                <br>
-                <a href="index.html"><img src="https://img.shields.io/badge/Início-white"/></a>
-            </div>
-        </div>
-        
-        <br><br>
+
+      
+                      <!-- Botão Dropdown (Menu no canto superior direito da imagem) -->
+                      <div class="dropdown">
+                        <button>Menu</button>
+                        <div class="dropdown-content">
+                            <a href="index.html">Início</a>
+                            <a href="projetos.html">Projetos</a>
+                            <a href="links.html">Links</a>
+                        </div>
+                    </div>
+      
+              <br>
+              <br>
+              <br>
 
         <center>
             <a href="#img1" class="block-item layout-countdown card-style">
@@ -120,6 +176,15 @@
             <a href="#" class="close-btn">&times;</a>
             <img src="https://sun9-6.userapi.com/impg/H7qGozPryKkr9zI9HRD4Ry2yxpe8NgK3n4CQRQ/qLBKubBZtOg.jpg?size=1730x2160&quality=96&sign=189eccbbfc359039d667e2915c0c3798&type=album" alt="Imagem ampliada">
         </div>
+
+      <br>
+      <br>  
+  <div class="powered-by-shorby">
+    <a>feito pelo <strong>rodrigo</strong>
+    </a>
+  </div>
+
+</div>
     </div>
 </body>
 </html>
